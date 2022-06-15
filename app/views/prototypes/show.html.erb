@@ -43,7 +43,7 @@
            <% end %>
         <% end %> 
         <ul class="comments_lists">
-          <%@comments.each do |com|%>
+          <% @comments.each do |com| %>
             <li class="comments_list">
                <%= com.content %>
               <%= link_to "（ #{com.user.name} ）", user_path(com.user.id), class: :comment_user %>
